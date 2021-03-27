@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./client/admin/*",
+        "./client/user/*"
+      ],
+      "@/*": [
+        "./client/admin/*",
+        "./client/user/*"
+      ]
+    },
+    "types": [
+      "@types/node",
+      "@nuxt/types"
+    ],
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "client/admin/.nuxt",
+    "client/user/.nuxt",
+    ".nuxt",
+    "dist"
+  ]
+}
